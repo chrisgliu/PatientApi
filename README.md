@@ -29,11 +29,11 @@ python3 manage.py runserver
 
 admin/ \
 api/ \
-[GET,POST] \
+[GET, POST] \
 api/users/ \
-[GET,POST] \
+[GET, POST] \
 api/procedures/ \
-[GET,POST] \
+[GET, POST] \
 api/instructions/ \
 [GET, PUT, DELETE] \
 api/procedure/(id)/ \
