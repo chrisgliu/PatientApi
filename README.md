@@ -42,5 +42,5 @@ api/instruction/(id)/ \
 [GET] \
 api/procedurelist/(username)/ \
 [GET] \
-api/instructionlist/(username)/(procedure_id)/ \
+api/instructionlist/(username)/(procedure_id)/
 
