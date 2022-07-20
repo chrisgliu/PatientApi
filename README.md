@@ -27,20 +27,20 @@ python3 manage.py runserver
 
 ## URL Paths
 
-admin/
-api/
-[GET,POST]
-api/users/
-[GET,POST]
-api/procedures/
-[GET,POST]
-api/instructions/
-[GET, PUT, DELETE]
-api/procedure/(id)/
-[GET, PUT, DELETE]
-api/instruction/(id)/
-[GET]
-api/procedurelist/(username)/
-[GET]
-api/instructionlist/(username)/(procedure_id)/
+admin/ \
+api/ \
+[GET,POST] \
+api/users/ \
+[GET,POST] \
+api/procedures/ \
+[GET,POST] \
+api/instructions/ \
+[GET, PUT, DELETE] \
+api/procedure/(id)/ \
+[GET, PUT, DELETE] \
+api/instruction/(id)/ \
+[GET] \
+api/procedurelist/(username)/ \
+[GET] \
+api/instructionlist/(username)/(procedure_id)/ \
 
