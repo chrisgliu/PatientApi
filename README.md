@@ -14,7 +14,7 @@ git clone <this repository>
 ```
 ## Usage
 
-Set up the database
+Set up the database *currently just sqlite
 ```bash
 python3 manage.py makemigrations
 python3 manage.py migrate
