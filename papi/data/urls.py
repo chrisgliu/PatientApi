@@ -14,6 +14,8 @@ router.register(r'instructions', views.InstructionViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
     path('', views.index, name='index'),
+    path('api/procedure/<pk>', views.ProcedureDetail.as_view()),
+    path('api/instruction/<pk>', views.InstructionDetail.as_view()),
     path('api/procedurelist/<username>/', views.ProcedureList.as_view()),
     path('api/instructionlist/<username>/<procedure_id>/', views.InstructionList.as_view()),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
