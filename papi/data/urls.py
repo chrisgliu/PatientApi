@@ -15,7 +15,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('', views.index, name='index'),
     path('api/procedurelist/<username>/', views.ProcedureList.as_view()),
-    path('api/instructionlist/<username>/<program_id>/', views.InstructionList.as_view()),
+    path('api/instructionlist/<username>/<procedure_id>/', views.InstructionList.as_view()),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
 

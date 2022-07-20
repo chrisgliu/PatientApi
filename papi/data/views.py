@@ -5,6 +5,7 @@ from rest_framework import generics
 from .serializers import *
 from .models import * 
 from django.contrib.auth.models import User
+from django.shortcuts import render
 
 # ViewSets define the view behavior.
 
@@ -42,7 +43,7 @@ class InstructionList(generics.ListAPIView):
         username =  self.kwargs['username']
         if username is None: 
             return queryset
-        program_pk =  self.kwargs['program_id']
+        program_pk =  self.kwargs['procedure_id']
         if  program_pk is None: 
             return queryset
         user = User.objects.get(username=username)
@@ -58,5 +59,5 @@ class InstructionList(generics.ListAPIView):
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Created By Chris")
+    return render(request, 'index.html');
 
