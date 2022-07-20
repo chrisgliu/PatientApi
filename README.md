@@ -13,7 +13,9 @@ pip3 install -r requirements.txt
 git clone <this repository>
 ```
 ## Usage
-
+```bash
+cd PatientApi/papi
+```
 Set up the database *currently just sqlite
 ```bash
 python3 manage.py makemigrations
